@@ -1,0 +1,120 @@
+/* General background for the root BorderPane */
+.root {
+    -fx-background-color: #A9A9A9; /* Grey background to match overall frame */
+}
+
+/* MenuBar Styling */
+.menu-bar {
+    -fx-background-color: #36454F; /* Charcoal grey */
+}
+
+.menu {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.menu .label {
+    -fx-text-fill: #FFFFFF; /* White text for menu items */
+}
+
+.menu-item .label {
+    -fx-text-fill: #000000; /* Black text for menu item labels */
+}
+
+.menu-item:focused {
+    -fx-background-color: #B0C4DE; /* Light steel blue on focus */
+}
+
+.menu-item:hover {
+    -fx-background-color: #B0C4DE; /* Light steel blue on hover */
+}
+
+/* Left Panel Styling (Dark Brown) */
+#leftPanel {
+    -fx-background-color: #8B4513; /* SaddleBrown */
+    -fx-padding: 20px;
+    -fx-spacing: 20px;
+}
+
+#profileImageView {
+    -fx-background-color: #555555; /* Dark grey for the placeholder circle */
+    -fx-arc-width: 360; /* Makes it circular */
+    -fx-arc-height: 360; /* Makes it circular */
+    /* Add border if desired */
+    -fx-border-color: white;
+    -fx-border-width: 2px;
+    -fx-border-radius: 75px; /* Half of fitWidth/fitHeight to make it a circle */
+}
+
+
+/* TableView Styling */
+.table-view {
+    -fx-background-color: #F8F8F8; /* Light grey background */
+    -fx-border-color: #CCCCCC;
+    -fx-border-width: 1px;
+    -fx-padding: 5px;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #D3D3D3; /* Light grey header background */
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #333333; /* Dark grey text for headers */
+    -fx-font-weight: bold;
+}
+
+.table-view .table-cell {
+    -fx-alignment: CENTER_LEFT;
+    -fx-text-fill: #000000; /* Black text for table cells */
+    -fx-border-color: #EEEEEE; /* Lighter border for cells */
+    -fx-border-width: 0 1px 1px 0;
+}
+
+.table-view .table-row-cell:odd {
+    -fx-background-color: #F0F0F0; /* Slightly darker for odd rows */
+}
+
+.table-view .table-row-cell:even {
+    -fx-background-color: #FFFFFF; /* White for even rows */
+}
+
+.table-view .table-row-cell:selected {
+    -fx-background-color: #ADD8E6; /* Light blue for selected row */
+}
+
+/* Right Panel Styling (Green) */
+.right-vbox { /* Assign this class to the right VBox in FXML */
+    -fx-background-color: #90EE90; /* LightGreen */
+    -fx-padding: 20px;
+    -fx-spacing: 10px;
+}
+
+/* TextField Styling */
+.text-field {
+    -fx-background-color: #FFFFFF; /* White background */
+    -fx-border-color: #CCCCCC;
+    -fx-border-width: 1px;
+    -fx-border-radius: 3px;
+    -fx-padding: 5px;
+}
+
+/* Button Styling */
+.button {
+    -fx-background-color: #8B4513; /* SaddleBrown */
+    -fx-text-fill: #FFFFFF; /* White text */
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 8px 15px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #A0522D; /* Sienna, slightly lighter brown on hover */
+}
+
+.button:pressed {
+    -fx-background-color: #69320C; /* Darker brown on press */
+}
